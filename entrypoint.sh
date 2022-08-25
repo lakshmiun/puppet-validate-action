@@ -1,6 +1,8 @@
 #!/bin/bash -x
 
 set -euo pipefail
+cd /opt/puppetlabs/puppet/bin/
+ls -lrta
 
 if [[ "$#" -eq "0" ]]; then
 	# No arguments given, run the syntax checker on every Puppet manifest in the current directory
