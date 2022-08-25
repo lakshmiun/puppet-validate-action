@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Dockerfile lint
-        uses: docker://replicated/dockerfilelint:09a5034
+        uses: docker://replicated/dockerfilelint:latest
         with:
           args: Dockerfile
 
