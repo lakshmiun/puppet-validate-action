@@ -23,6 +23,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../microservices/actions-sync/sync.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../microservices/puppet/.github/workflows/puppet-parser-validate.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
