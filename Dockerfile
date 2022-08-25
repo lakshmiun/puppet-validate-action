@@ -1,4 +1,4 @@
-FROM centos:8
+FROM centos:7
 
 LABEL name="puppet-validate-action"
 LABEL repository="https://github.com/lakshmiun/puppet-validate-action"
