@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 set -euo pipefail
-cd /opt/puppetlabs/puppet/bin/ruby/
+cd /opt/puppetlabs/puppet/bin/
 ls -lrta
 
 if [[ "$#" -eq "0" ]]; then
