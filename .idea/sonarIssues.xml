@@ -33,6 +33,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../microservices/puppet/.github/workflows/puppet-lint-action.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../microservices/puppet/.github/workflows/puppet-parser-validate.yml">
           <value>
             <set />
