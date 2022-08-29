@@ -1,4 +1,4 @@
-FROM centos:7
+FROM ubuntu:22.04
 
 LABEL name="puppet-validate-action"
 LABEL repository="https://github.com/lakshmiun/puppet-validate-action"
@@ -11,7 +11,7 @@ LABEL "com.github.actions.color"="orange"
 
 LABEL "maintainer"="Sahaja Undavalli <https://github.com/lakshmiun/>"
 
-RUN yum -y install http://yum.puppetlabs.com/puppet7/el/8/x86_64/puppet-agent-7.11.0-1.el8.x86_64.rpm
+RUN wget https://apt.puppetlabs.com/puppet7-release-focal.deb
 COPY entrypoint.sh /entrypoint.sh
 RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
