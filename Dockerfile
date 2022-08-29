@@ -11,6 +11,9 @@ LABEL "com.github.actions.color"="orange"
 
 LABEL "maintainer"="Sahaja Undavalli <https://github.com/lakshmiun/>"
 
+RUN apt-get update \
+      && apt-get install -y wget \
+      && rm -rf /var/lib/apt/lists/*
 RUN wget https://apt.puppetlabs.com/puppet7-release-focal.deb
 COPY entrypoint.sh /entrypoint.sh
 RUN ["chmod", "+x", "/entrypoint.sh"]
