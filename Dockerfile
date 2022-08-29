@@ -12,7 +12,7 @@ LABEL "com.github.actions.color"="orange"
 LABEL "maintainer"="Sahaja Undavalli <https://github.com/lakshmiun/>"
 
 RUN apt-get -y install --no-install-recommends update \
-      && apt-get install --no-install-recommends -y wget \
+      && apt-get install --no-install-recommends wget \
       && rm -rf /var/lib/apt/lists/*
 RUN wget https://apt.puppetlabs.com/puppet7-release-focal.deb
 COPY entrypoint.sh /entrypoint.sh
