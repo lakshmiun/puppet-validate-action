@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install --no-install-recommends --yes wget \
       && rm -rf /var/lib/apt/lists/*
 RUN wget --no-check-certificate https://apt.puppetlabs.com/puppet7-release-focal.deb && dpkg -i puppet7-release-focal.deb && apt update \
       && apt install puppet-agent -y
-RUN puppet -V
+RUN puppet agent --version
 
 COPY entrypoint.sh /entrypoint.sh
 RUN ["chmod", "+x", "/entrypoint.sh"]
