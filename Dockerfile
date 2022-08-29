@@ -14,6 +14,8 @@ LABEL "maintainer"="Sahaja Undavalli <https://github.com/lakshmiun/>"
 RUN apt-get update && apt-get install --no-install-recommends --yes wget \
       && rm -rf /var/lib/apt/lists/*
 RUN wget https://apt.puppetlabs.com/puppet7-release-focal.deb
+RUN sudo dpkg -i puppet7-release-focal.deb
+
 COPY entrypoint.sh /entrypoint.sh
 RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
