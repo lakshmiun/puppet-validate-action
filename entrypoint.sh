@@ -1,6 +1,7 @@
 #!/bin/bash -x
 
 set -euo pipefail
+dpkg -S /lib/x86_64-linux-gnu/libcrypt.so.1
 cd /opt/puppetlabs/puppet/bin/
 ls -lrta
 
